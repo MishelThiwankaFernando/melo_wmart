@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Header and footer.css">
+    <link rel="stylesheet" href="../CSS/View.css">
+    <title>Melow Traders</title>
+</head>
+<body>
+    
+<!--Header section-->
+    <div class="top-header">
+        <div class="leftside">
+            <p><img src="../Images/telephone.png" alt="phone" class="top_nav_img">+94 72 56 896 
+            &emsp; <img src="../Images/mail.png" alt="mail" class="top_nav_img">Hello@iwtus.com 
+            &emsp; <img src="../Images/location.png" alt="location" class="top_nav_img">no.50 chilaw road negombo</p> 
+        </div> 
+
+        <div class="rightside">
+            <a href=""><img class="icon" src="../Images/login.png" alt="login icon"></a>
+        </div>
+    </div>
+    <hr>
+
+    <Header class="head">
+        <img src="../Images/logo_d.jpeg" alt="logo" class="logo">
+
+    <nav>
+    <ul class="navi">
+        <li class="list1"><a href="../HTML/Home.html">Home</a></li>
+        <li class="list1"><a href="../HTML/Product.html">Products</a></li>
+        <li class="list1"><a href="#">About Us</a></li>
+        <li class="list1"><a href="#">Contact Us</a></li>
+        <li class="list1"><a href="#">News</a></li>
+    </ul>
+    </nav>
+
+    <div class="searchbar_container">
+        <form action="" class="searchbar">
+            <input type="text" placeholder="Search..." name="Search">
+            <button type="submit"><img src="../Images/search.png" alt=""></button>
+        </form>
+    </div>
+</Header>
+<hr>
+<!--end-->
+
+<!--body section-->
+
+<div class="container">
+    <div class="view-product">
+            <div class="product-details" id="middle">
+                <img src="../Images/products/Under armour black.jpg" alt="UA-Black" id="Main_Product_image">
+            </div>
+
+        <form action="../PHP/order_store.php" method="POST">
+
+            <div class="product-details" style="width: 500px;">
+                <h2>Under Armour Shirt</h2>
+                
+               <div name="Price-div"><h4>$<input type="text" name="Price" value="39.00" readonly></h4></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+            
+                <div class="mainButtonDiv">
+                    <div class="buttonsDiv">
+                        <p class="size-para">Size</p>
+                            <select id="size" name="G-size" class="form-control">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            </select>
+                    </div>
+                <div class="buttonsDiv">
+                    <p class="quantity-para">Quantity</p>
+                    <input type="number" class="quantity" value="1" name="Quantity">
+                </div>
+                <div class="color-button">
+                    <label for="btn1"><input type="radio" class="button" name="Color" value="Red" id="btn1" onclick="loadData('btn1')">Red</label>
+                    <label for="btn2"><input type="radio" class="button button2" name="Color" value="Blue" id="btn2" onclick="loadData('btn2')">Blue</label>
+                    <label for="btn3"><input type="radio" class="button button3" name="Color" value="White" id="btn3" onclick="loadData('btn3')">White</label>
+                    <label for="btn4"><input type="radio" class="button button4" name="Color" value="Black" id="btn4" onclick="loadData('btn4')">Black</label>
+                </div>
+                 
+            </div>
+            
+            
+            <div class="buyitnow">
+                <input type="submit" value="Buy It Now">
+            </div>
+        </div>
+          </div>
+        </form>
+</div>
+
+<hr>
+    <div class="reviewArea">
+        <div class="readReview">
+            
+            <h2><Center>Reviews about this garment item</Center></h2>
+            <div class="Reviews">
+                <P>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nobis placeat tempora, reiciendis, explicabo fugit ea facilis totam, magnam aliquid ducimus officia? Tenetur quas sunt velit debitis, ex mollitia cumque!
+                    Veniam pariatur sequi labore, quos ad mollitia recusandae iusto exercitationem aliquid odit repellat culpa at soluta reiciendis quo delectus, nobis magni in nostrum quidem. Temporibus placeat assumenda est repellat explicabo.
+                    Dolor obcaecati maiores veritatis laboriosam cumque! Ratione aspernatur aliquam debitis? Iusto, commodi dicta necessitatibus eos qui harum nostrum. Sunt quasi accusantium deserunt saepe. Vero cupiditate perferendis molestiae quibusdam dolores? Beatae.
+                    
+                </P>
+                
+            </div> 
+        </div>
+        
+    </div>
+    <div class="form">
+        <form id="review-form">
+            <h3><center>Add Your Review</center></h3>
+        <div class="input_form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="name" placeholder="Your email" required>
+        </div>
+        <br>
+        <div class="bottom-form">
+            <textarea id="comment" placeholder="Your Review" required rows="10" cols="50"></textarea>
+            <br>
+        </div>
+        <div class="submission">
+            <button type="submit">Submit</button>
+        </div>
+        </form>
+</div>
+
+<script src="../JS/colorButtons.js"></script>
+<!--Footer section-->
+<footer class="footer">
+    <div class="row"> 
+    
+    <div class="row" class="footer-information">
+        <div id="column" >
+            <img src="../Images/logo_d.jpeg" alt="Logo" class="logo">
+            <h3>Information</h3>
+            <p>+94 72 56 896</p>
+            <p>hello@itwus.com</p>
+            <p>no.50 chilaw road negombo</p>
+        </div>
+
+        <div id="column" >
+            <h3 class="social-h3">About Us</h3>
+            <p class="about-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quas, molestiae perspiciatis sint dolore voluptas beatae suscipit?
+                 Blanditiis aperiam molestiae aliquam non dicta ad dignissimos, laborum, 
+                 eos et ullam quidem similique!</p>
+            <h4 class="social-h4">Social Media Links</h4>
+            <ul class="social-links" style="padding-left: 0px;">
+                <li><a href="#"><img src="../Images/facebook.png" ></a></li>
+                <li><a href="#"><img src="../Images/instagram.png" ></a></li>
+                <li><a href="#"><img src="../Images/whatsapp.png"></a></li>
+                <li><a href="#"><img src="../Images/twitter.png"></a></li>
+                
+            </ul>
+        </div>
+
+        <div id="column">
+          <h3 class="quick-head">Quick Links</h3>
+          <ul class="quick-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+<hr>
+    <div class="footer-copyright">
+      <p>Copyright 2024 © All rights reserved design by mishel thiwanka</p>
+    </div>
+    
+  </footer>
+</footer>
+<!--end-->
+</body>
+</html>

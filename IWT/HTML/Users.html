@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Header and footer.css">
+    <link rel="stylesheet" href="../CSS/Admin.css">
+    <link rel="stylesheet" href="../CSS/Users.css">
+    <link rel="stylesheet" href="../JS/Users.js">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Melow Traders</title>
+</head>
+<body>
+    
+<!--Header section-->
+    <p><img src="../Images/telephone.png" alt="phone" class="top_nav_img">+94 72 56 896 &emsp; <img src="../Images/mail.png" alt="mail" class="top_nav_img">Hello@iwtus.com    &emsp; <img src="../Images/location.png" alt="location" class="top_nav_img">65 NW Kandy RD, Malabe  <span class="icon">icon</span></p>
+    <hr>
+
+    <Header class="head">
+        <img src="../Images/logo_d.jpeg" alt="logo" class="logo">
+
+    <nav>
+    <ul class="navi">
+        <li class="list1"><a href="../HTML/Home.html">Home</a></li>
+        <li class="list1"><a href="#">Products</a></li>
+        <li class="list1"><a href="#">About Us</a></li>
+        <li class="list1"><a href="../HTML/Admin.html">Admin</a></li>
+        <li class="list1"><a href="../HTML/Support.html">Support</a></li>
+    </nav>
+
+    <div class="searchbar_container">
+        <form action="" class="searchbar">
+            <input type="text" placeholder="Search..." name="Search">
+            <button type="submit"><img src="../Images/search.png" alt=""></button>
+        </form>
+    </div>
+    
+</Header>
+<hr>
+<br>
+
+    <!--end-->
+
+<!--Header section-->
+<h1></h1>
+    <div class="navigation">
+        <div class="toggle"> </div>
+        
+        <ul>
+            <li>
+                <a href="../HTML/Admin.html">
+                <span class="icon">
+                 <i class="fa fa-dashboard" aria-hidden="true"></i>
+                </span>
+                   <span class="title">Dashboard</span>
+                </a>
+            
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon">
+                <i class="fa fa-users" aria-hidden="true"></i>
+                </span>
+                <span class="title">Users</span>
+                </a>
+            </li>  
+            <li>
+                <a href="../HTML/Reports.html">
+                <span class="icon">
+                <i class="fa fa-comment" aria-hidden="true"></i>
+                </span>
+                <span class="title">Reports</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon">
+                 <i class="fa fa-sign-out" aria-hidden="true"></i>
+                </span>
+                <span class="title">Sign Out</span>
+                </a>               
+            </li>
+            </div>
+            <fieldset id="fieldset">
+            <h1>User Account Management</h1>
+            <br>
+            <center>
+            <form id="user-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="role">Role:</label>
+                <select id="role" name="role">
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                </select>
+        
+                <button type="submit">Add User</button>
+            </form>
+        
+          <table id="user-table">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+            </table>
+            <br>
+            <br>
+            <h1>Delete User</h1>
+            <form action="/api/users/delete" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br><br>
+                <input type="submit" value="Delete User">
+            </form>
+        </center>
+            </fieldset>
+            <br>
+            <br>
+            <br>
+
+
+<!--Footer section-->
+<footer class="footer">
+    <div class="row"> 
+    
+    <div class="row" class="footer-information">
+        <div id="column" >
+            <img src="../Images/logo_d.jpeg" alt="Logo" class="logo">
+            <h3>Information</h3>
+            <p>+94 72 56 896</p>
+            <p>hello@itwus.com</p>
+            <p>65 NW Kandy RD, Malabe</p>
+        </div>
+
+        <div id="column" >
+            <h3 class="social-h3">About Us</h3>
+            <p class="about-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quas, molestiae perspiciatis sint dolore voluptas beatae suscipit?
+                 Blanditiis aperiam molestiae aliquam non dicta ad dignissimos, laborum, 
+                 eos et ullam quidem similique!</p>
+            <h4 class="social-h4">Social Media Links</h4>
+            <ul class="social-links" style="padding-left: 0px;">
+                <li><a href="#"><img src="../Images/facebook.png" ></a></li>
+                <li><a href="#"><img src="../Images/instagram.png" ></a></li>
+                <li><a href="#"><img src="../Images/whatsapp.png"></a></li>
+                <li><a href="#"><img src="../Images/twitter.png"></a></li>
+                
+            </ul>
+        </div>
+
+        <div id="column">
+          <h3 class="quick-head">Quick Links</h3>
+          <ul class="quick-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Admin</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+<hr>
+    <div class="footer-copyright">
+      <p>Copyright 2023 © All rights reserved design by Bimsara</p>
+    </div>
+    
+  </footer>
+</footer>
+<!--end-->
+<script>
+    const navigation =
+document.querySelector('.navigation');
+document.querySelector('.toggle').onclick = function(){
+this.classList.toggle('active');
+navigation.classList.toggle('active');
+} 
+$( function(){
+$( ".navigation" ).draggable();
+} );
+</script>
+</body>
+</html>

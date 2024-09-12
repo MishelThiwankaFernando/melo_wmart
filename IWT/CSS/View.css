@@ -1,0 +1,192 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+  }
+
+.container .view-product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 10px;
+}
+
+.container .product-details{
+    width: 50%;
+    padding: 10px;
+}
+
+.Price-div input[type=text]{
+  outline: none;
+  border: 1px solid #ffffff;
+}
+
+.container #middle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .product-details img{
+    width: 550px;
+    height: auto;
+}
+
+
+#size {
+    background-color: #0563af;
+    color: white;
+    margin-top: 15px;
+    padding: 12px;
+    width: 150px;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    outline: none;
+  }
+  
+  .size-para{
+    margin-top: 20px;
+    margin-bottom: 0%;
+  }
+
+  .container .mainButtonDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    
+  }
+
+  .mainButtonDiv .buttonsDiv{
+    width: 50%;
+  }
+/*increase button*/
+  
+.product-name {
+    flex: 1;
+}
+
+.quantity {
+  background-color: #0563af;
+  color: white;
+  margin-top: 4px;
+  padding: 12px;
+  width: 150px;
+  height: auto;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  outline: none;
+    text-align: center;
+}
+
+
+
+.color-button{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+
+}
+
+input[type="radio"] {
+  width: 30%; /* Adjust to your preferred width */
+  height: 30px; /* Adjust to your preferred height */
+}
+.color-button label.selected {
+  background-color: #ccc; /* Change to the desired background color */
+  color: #fff; /* Change to the desired text color */
+  border: 2px solid #000; /* Change to the desired border color */
+}
+
+  .container .upload_image input{
+    margin-top: 15px;
+    padding: 10px;
+    height: auto;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+
+  }
+  .container .buyitnow input{
+    margin-top: 20px;
+    background-color: #0563af;
+    color: white;
+    padding: 12px;
+    width: 150px;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    outline: none;
+    text-align: center;
+
+  }
+
+
+  .reviewArea{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+  }
+  .reviewArea .readReview{
+    padding: 10px 50px;
+    max-width:  80%;
+    text-align: justify;
+  }
+  .reviewArea .readReview .Reviews{
+    font-size: 18px;
+  }
+
+  .form .form{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+  }
+
+#review-form .input_form{
+  display: flex;
+  justify-content: center;
+  }
+
+  .input_form input{
+    width: 25%;
+    height: 40px;
+    margin: 20px;
+  }
+
+  #review-form .bottom-form{
+    display: flex;
+    justify-content: center;
+    }
+
+  .bottom-form textarea{
+    width: 50%;
+    margin: 10px;
+  }
+
+  #review-form .submission{
+    display: flex;
+    justify-content: center;
+    }
+
+    #review-form .submission button{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #e63946;
+    color: white;
+    padding: 12px;
+    width: 150px;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    outline: none;
+    text-align: center;
+      }
+

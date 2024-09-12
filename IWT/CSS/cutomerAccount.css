@@ -1,0 +1,18 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+  }
+
+.container .sides{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .sides .side-panal{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    
+}
